@@ -17,8 +17,13 @@ navBar.forEach((element) => {
         element.style.fontSize = "40px";
     });
 });
-
-
+//stop link
+const stopLink = document.querySelectorAll('.nav-link');
+stopLink.forEach((element) =>{
+    element.addEventListener('click', (event)=>{
+    event.preventDefault();
+    })
+})
 
 //fun-bus picture (dblclick)
 const funBus = document.querySelector('.fun-bus')
@@ -106,7 +111,7 @@ window.addEventListener('scroll', ()=>{
     body.style.backgroundColor='hotpink'
 });
 
-
+//stop propagation
 const endContent1 = document.querySelector('.content-pick');
 endContent1.addEventListener('click', ()=>{
     endContent1.style.backgroundColor='green';
