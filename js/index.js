@@ -128,3 +128,23 @@ endContent3.addEventListener('click', ()=>{
     endContent3.style.backgroundColor='orange';
 })
 
+//stretch
+const funImg = document.querySelector('.fun-img');
+funImg.addEventListener('mouseenter', ()=>{
+    gsap.to('.fun-img',{
+        duration:1,
+        x: -20,
+        y: -10,
+        rotate: 360,
+        yoyo:true,
+        repeat: 1
+    })
+})
+const footer1 = document.querySelector('.footer1');
+footer1.addEventListener('mouseenter', ()=>{
+gsap.to('.footer', {  
+    left:100,   
+    top: 75,   
+    ease: Power4.easeOut
+});
+});
