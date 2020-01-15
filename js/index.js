@@ -140,6 +140,18 @@ funImg.addEventListener('mouseenter', ()=>{
         repeat: 1
     })
 })
+const pickImg = document.querySelector('.pick');
+pickImg.addEventListener('mouseenter', ()=>{
+    gsap.to('.pick',{
+        duration:1,
+        x: -100,
+        y: -10,
+        rotate: 180,
+        yoyo:true,
+        repeat: 1
+    })
+})
+
 const footer1 = document.querySelector('.footer1');
 footer1.addEventListener('mouseenter', ()=>{
 gsap.to('.footer', {  
